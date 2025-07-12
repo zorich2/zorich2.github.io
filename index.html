@@ -55,13 +55,10 @@
       <p id="text"></p>
     </div>
     <div>
-      <div id="title">
-        护理垂直管理理论与实践学习班
-      </div>
+      <div id="title"></div>
       <img id="img"src="" alt="" />
-      <div id="date">
-        7月13日签到码
-      </div>
+      <div id="date"></div>
+      <img id="logo" src="./flower.jpg" alt="">
     </div>
   </div>
 </body>
@@ -98,6 +95,8 @@
           window.location.replace(target)
         }
       } else {
+        document.getElementById('title').innerText = '护理垂直管理理论与实践学习班'
+        document.getElementById('date').innerText = '7月13日签到码'
         SetQrcode()
         setInterval(() => {
           SetQrcode()
